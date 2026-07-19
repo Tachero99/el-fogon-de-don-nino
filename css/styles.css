@@ -319,12 +319,6 @@ section {
   max-width: 46ch;
 }
 
-.nosotros__foto {
-  padding: 10px;
-  border: 1px solid rgba(185, 141, 79, 0.35);
-  border-radius: var(--radio);
-}
-
 .nosotros__foto img {
   border-radius: var(--radio);
   box-shadow: var(--sombra);
