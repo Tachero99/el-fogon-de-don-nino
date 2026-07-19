@@ -29,7 +29,7 @@ Abrí `index.html` con cualquier editor de texto (recomendado: Visual Studio Cod
 <!-- ===================== MENÚ ===================== -->
 ```
 
-Ahí vas a ver bloques por categoría (Parrilla, Milanesas, Pastas caseras, Ensaladas, Postres). Cada plato es una línea así:
+Ahí vas a ver bloques por categoría (Parrilla, Milanesas, Pastas caseras, Ensaladas). Cada plato es una línea así:
 
 ```html
 <li>Vacío</li>
@@ -39,10 +39,19 @@ Ahí vas a ver bloques por categoría (Parrilla, Milanesas, Pastas caseras, Ensa
 - **Para sacar un plato**: borrá la línea completa, desde `<li>` hasta `</li>`.
 - **No hace falta poner precios.** El menú se muestra sin precios a propósito, porque cambian seguido. Si alguien pregunta el precio, lo consulta por WhatsApp o llamando.
 
-El flan casero tiene una etiqueta especial ("el orgullo de la casa"). Si algún día querés destacar otro plato de la misma forma, copiá esta estructura:
+La categoría de **Postres** está armada un poco distinto (cada plato es una línea `<p>...</p>` en vez de `<li>`), porque el flan casero tiene una etiqueta especial destacada ("El orgullo de la casa"). Para agregar otro postre, copiá una línea así:
 
 ```html
-<li class="menu__destacado">Nombre del plato <span class="badge">tu texto</span></li>
+<p>Nombre del postre</p>
+```
+
+Si algún día querés destacar otro plato de la misma forma que el flan, copiá esta estructura:
+
+```html
+<p class="carta__destacado">
+  <span class="carta__destacado-nombre">Nombre del plato</span>
+  <span class="cinta">Tu texto</span>
+</p>
 ```
 
 ## 4. Cómo editar textos (Nosotros, horarios, dirección, etc.)
