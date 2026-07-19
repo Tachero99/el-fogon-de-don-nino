@@ -320,16 +320,9 @@ section {
 }
 
 .nosotros__foto {
-  position: relative;
-}
-
-.nosotros__foto::before {
-  content: "";
-  position: absolute;
-  inset: 14px -14px -14px 14px;
-  border: 1px solid rgba(185, 141, 79, 0.4);
+  padding: 10px;
+  border: 1px solid rgba(185, 141, 79, 0.35);
   border-radius: var(--radio);
-  z-index: -1;
 }
 
 .nosotros__foto img {
