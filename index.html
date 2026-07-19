@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Fogón de Don Nino | Parrilla en Sarandí, Buenos Aires</title>
+  <meta name="description" content="Parrilla familiar con 40 años de historia en Sarandí, Buenos Aires. Asado, achuras, milanesas, pastas caseras y el flan casero de la casa. Reservá por WhatsApp.">
+
+  <!-- Google Fonts: Fraunces para títulos (cálida, con carácter) y Mulish para el texto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#inicio" class="logo">El Fogón <span>de Don Nino</span></a>
+
+      <!-- Botón hamburguesa, solo visible en mobile -->
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#reservas">Reservas</a></li>
+          <li><a href="#ubicacion">Ubicación</a></li>
+          <li><a href="#instagram">Instagram</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== INICIO / HERO ===================== -->
+    <section id="inicio" class="hero">
+      <img src="img/parrilla.jpg" alt="Parrilla a las brasas humeante con chorizos, morcillas y achuras en El Fogón de Don Nino" class="hero__img">
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <h1>El Fogón de Don Nino</h1>
+        <p class="hero__bajada">40 años de asado, familia y fuego de leña en el corazón de Sarandí.</p>
+        <div class="hero__cta">
+          <a href="https://wa.me/5491164099986?text=Hola%2C%20quería%20hacer%20una%20reserva%20en%20El%20Fogón%20de%20Don%20Nino"
+             class="btn btn--primary" target="_blank" rel="noopener"
+             aria-label="Reservar por WhatsApp">Reservá por WhatsApp</a>
+          <a href="#menu" class="btn btn--secondary">Ver el menú</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== NOSOTROS ===================== -->
+    <section id="nosotros" class="nosotros">
+      <div class="container nosotros__grid">
+        <div class="nosotros__texto">
+          <p class="eyebrow">Nuestra historia</p>
+          <h2>Tres generaciones al fuego</h2>
+          <p>Hace 40 años, Don Nino prendió por primera vez la parrilla en Casella Piñero al 187, en Sarandí. Empezó con una mesa y un fuego a leña, y con el tiempo el barrio entero terminó pasando por acá para comer un buen asado.</p>
+          <p>Hoy la parrilla la sigue llevando la familia: Ricardo, su hijo, está al frente del salón y de la cocina igual que aprendió de chico, mirando a su padre. Su hijo Facu se sumó para que el fogón también llegue a quienes buscan dónde comer desde el celular.</p>
+          <p>Somos de fierro y madera, no de neón. Seguimos haciendo las cosas como siempre: con brasas, tiempo y la mesa siempre lista para la familia y los amigos.</p>
+        </div>
+        <div class="nosotros__foto">
+          <img src="img/equipo.jpg" alt="Ricardo, Facu y la familia de El Fogón de Don Nino junto a una parrillada recién servida" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MENÚ ===================== -->
+    <section id="menu" class="menu">
+      <div class="container">
+        <p class="eyebrow eyebrow--center">Nuestra carta</p>
+        <h2 class="section-title">El menú</h2>
+
+        <!--
+          NOTA PARA FACU:
+          Para agregar o sacar un plato, buscá la categoría (parrilla, milanesas, etc.)
+          y copiá o borrá una línea <li>Nombre del plato</li> dentro de esa lista.
+          No hace falta poner precios: el menú va sin precios a propósito.
+        -->
+
+        <div class="menu__grid">
+
+          <div class="menu__categoria">
+            <h3>Parrilla</h3>
+            <ul>
+              <li>Asado</li>
+              <li>Vacío</li>
+              <li>Chorizo</li>
+              <li>Morcilla</li>
+              <li>Provoleta</li>
+            </ul>
+          </div>
+
+          <div class="menu__categoria">
+            <h3>Milanesas</h3>
+            <ul>
+              <li>Milanesa de carne</li>
+              <li>Milanesa napolitana</li>
+              <li>Milanesa a caballo</li>
+            </ul>
+          </div>
+
+          <div class="menu__categoria">
+            <h3>Pastas caseras</h3>
+            <ul>
+              <li>Sorrentinos</li>
+              <li>Ravioles</li>
+              <li>Ñoquis</li>
+            </ul>
+          </div>
+
+          <div class="menu__categoria">
+            <h3>Ensaladas</h3>
+            <ul>
+              <li>Ensalada mixta</li>
+              <li>Ensalada de tomate y cebolla</li>
+              <li>Ensalada rusa</li>
+            </ul>
+          </div>
+
+          <div class="menu__categoria menu__categoria--postres">
+            <h3>Postres</h3>
+            <ul>
+              <li class="menu__destacado">Flan casero <span class="badge">el orgullo de la casa</span></li>
+              <li>Ensalada de frutas</li>
+              <li>Helado</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <p class="menu__nota">Los precios pueden consultarse por WhatsApp o teléfono.</p>
+      </div>
+    </section>
+
+    <!-- ===================== RESERVAS ===================== -->
+    <section id="reservas" class="reservas">
+      <div class="container reservas__inner">
+        <p class="eyebrow eyebrow--center">Te esperamos</p>
+        <h2 class="section-title">Reservá tu mesa</h2>
+        <p class="reservas__texto">Escribinos por WhatsApp o llamanos directamente. También coordinamos reservas para grupos grandes y cumpleaños, y armamos pedidos para take away o delivery propio, todo por el mismo medio.</p>
+
+        <div class="reservas__botones">
+          <a href="https://wa.me/5491164099986?text=Hola%2C%20quería%20hacer%20una%20reserva%20en%20El%20Fogón%20de%20Don%20Nino"
+             class="btn btn--primary btn--grande" target="_blank" rel="noopener"
+             aria-label="Reservar por WhatsApp">
+            Reservar por WhatsApp
+          </a>
+          <a href="tel:+5491164099986" class="btn btn--outline btn--grande" aria-label="Llamar a El Fogón de Don Nino">
+            Llamar al local
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== UBICACIÓN ===================== -->
+    <section id="ubicacion" class="ubicacion">
+      <div class="container ubicacion__grid">
+        <div class="ubicacion__info">
+          <p class="eyebrow">Encontranos</p>
+          <h2>Ubicación y horarios</h2>
+          <p class="ubicacion__direccion">
+            📍 Casella Piñero 187, B1872 Sarandí, Provincia de Buenos Aires
+          </p>
+          <p class="ubicacion__horario">
+            🕓 Martes a domingo, de 12:00 a 00:00hs<br>
+            Lunes cerrado
+          </p>
+          <img src="img/mesa_ejemplo.jpg" alt="Mesa servida con parrillada, achuras y papas fritas en El Fogón de Don Nino" class="ubicacion__foto" loading="lazy">
+        </div>
+        <div class="ubicacion__mapa">
+          <iframe
+            title="Ubicación de El Fogón de Don Nino en Google Maps"
+            src="https://www.google.com/maps?q=Casella+Piñero+187,+B1872+Sarandí,+Provincia+de+Buenos+Aires&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== INSTAGRAM ===================== -->
+    <section id="instagram" class="instagram">
+      <div class="container instagram__inner">
+        <svg class="instagram__icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.06 2.4.31 3.3 1.2.9.9 1.15 2.1 1.2 3.3.06 1.3.07 1.7.07 4.9s0 3.6-.07 4.9c-.06 1.2-.31 2.4-1.2 3.3-.9.9-2.1 1.15-3.3 1.2-1.3.06-1.7.07-4.9.07s-3.6 0-4.9-.07c-1.2-.06-2.4-.31-3.3-1.2-.9-.9-1.15-2.1-1.2-3.3C2.5 15.6 2.5 15.2 2.5 12s0-3.6.07-4.9c.06-1.2.31-2.4 1.2-3.3.9-.9 2.1-1.15 3.3-1.2C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.15 0-3.52 0-4.76.07-1 .05-1.55.22-1.9.36-.48.19-.82.41-1.18.77-.36.36-.58.7-.77 1.18-.14.36-.31.9-.36 1.9C3 9.28 3 9.65 3 12s0 2.72.07 3.96c.05 1 .22 1.55.36 1.9.19.48.41.82.77 1.18.36.36.7.58 1.18.77.36.14.9.31 1.9.36C7.72 21 8.09 21 11.24 21h.76c3.15 0 3.52 0 4.76-.07 1-.05 1.55-.22 1.9-.36.48-.19.82-.41 1.18-.77.36-.36.58-.7.77-1.18.14-.36.31-.9.36-1.9.07-1.24.07-1.61.07-4.76s0-3.52-.07-4.76c-.05-1-.22-1.55-.36-1.9-.19-.48-.41-.82-.77-1.18-.36-.36-.7-.58-1.18-.77-.36-.14-.9-.31-1.9-.36C15.72 3 15.35 3 12 3zm0 4.8a4.2 4.2 0 1 1 0 8.4 4.2 4.2 0 0 1 0-8.4zm0 1.8a2.4 2.4 0 1 0 0 4.8 2.4 2.4 0 0 0 0-4.8zm5.3-2.4a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+        </svg>
+        <h2>Seguinos en Instagram</h2>
+        <p>Todos los días subimos los platos del día, así sabés qué hay en la parrilla antes de venir.</p>
+        <a href="https://instagram.com/elfogondenino" class="btn btn--outline" target="_blank" rel="noopener" aria-label="Ir al Instagram de El Fogón de Don Nino">
+          @elfogondenino
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__marca">
+        <p class="logo logo--footer">El Fogón <span>de Don Nino</span></p>
+        <p>Casella Piñero 187, B1872 Sarandí, Buenos Aires</p>
+        <p>Martes a domingo, 12:00 a 00:00hs — Lunes cerrado</p>
+      </div>
+      <div class="footer__links">
+        <a href="https://wa.me/5491164099986" target="_blank" rel="noopener" aria-label="Escribirnos por WhatsApp">WhatsApp: +54 9 11 6409-9986</a>
+        <a href="https://instagram.com/elfogondenino" target="_blank" rel="noopener" aria-label="Seguinos en Instagram">Instagram: @elfogondenino</a>
+      </div>
+    </div>
+    <p class="footer__copy">© <span id="anio"></span> El Fogón de Don Nino. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp, siempre visible -->
+  <a href="https://wa.me/5491164099986?text=Hola%2C%20quería%20hacer%20una%20reserva%20en%20El%20Fogón%20de%20Don%20Nino"
+     class="whatsapp-flotante" target="_blank" rel="noopener" aria-label="Reservar por WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.5 3.63 1.44 5.14L2 22l5.09-1.53a9.9 9.9 0 0 0 4.95 1.34c5.46 0 9.91-4.45 9.91-9.9C21.96 6.45 17.5 2 12.04 2zm0 18.05a8.1 8.1 0 0 1-4.13-1.13l-.3-.18-3.02.91.91-2.94-.2-.31a8.13 8.13 0 1 1 6.74 3.65zm4.47-6.08c-.24-.12-1.43-.71-1.66-.79-.22-.08-.38-.12-.55.12-.16.24-.63.79-.77.96-.14.16-.28.18-.53.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.44-1.35-1.68-.14-.24-.02-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.42-.55-.42h-.47c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.03s.87 2.36 1 2.52c.12.16 1.71 2.6 4.14 3.65.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.43-.58 1.63-1.15.2-.56.2-1.04.14-1.15-.06-.1-.22-.16-.46-.28z"/>
+    </svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
